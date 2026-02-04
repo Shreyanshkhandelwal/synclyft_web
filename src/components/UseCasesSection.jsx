@@ -36,9 +36,6 @@ const useCases = [
   },
 ];
 
-/* =========================
-   MAIN SECTION
-========================= */
 const UseCasesSection = () => {
   const [active, setActive] = useState(0);
   const sectionRef = useRef(null);
@@ -57,18 +54,27 @@ const UseCasesSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black py-16 sm:py-20 overflow-x-hidden"
+      className="
+        relative
+        overflow-x-hidden
+        bg-gradient-to-b
+        from-[#3a4d4d] 
+        via-black
+        to-black
+        pt-20
+        pb-20
+      "
     >
       {/* ===== HEADING ===== */}
       <div
         className={`
-          relative z-10 pt-20 sm:pt-28 pb-16 sm:pb-24 text-center
+          relative z-10
+          pb-16 sm:pb-20
+          text-center
           transition-all duration-[900ms] ease-out
           ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
         `}
       >
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#2a3a3a]/60 via-black to-black" />
-
         <div className="relative max-w-4xl mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-white">
             Real-World Use Cases{" "}

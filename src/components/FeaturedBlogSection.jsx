@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
-/* =========================
-   SYNClyft BLOG CONTENT
-========================= */
+
 const blogs = [
   {
-    tag: "#Interviews",
+    // tag: "#Interviews",
     category: "Preparation",
     title: "Why Practicing Interviews with AI Feels More Real",
     desc: "Traditional interview prep focuses on static questions. Synclyft uses adaptive AI to simulate real interview pressure, follow-ups, and conversational flow.",
@@ -15,7 +13,7 @@ const blogs = [
     read: "4 min read",
   },
   {
-    tag: "#Placements",
+    // tag: "#Placements",
     category: "Students",
     title: "How Students Can Prepare Smarter for Campus Placements",
     desc: "From aptitude and coding rounds to HR interviews, learn how realistic mock interviews can improve confidence and on-campus performance.",
@@ -25,7 +23,7 @@ const blogs = [
     read: "5 min read",
   },
   {
-    tag: "#CareerGrowth",
+    // tag: "#CareerGrowth",
     category: "Professionals",
     title: "Preparing for a Role Switch: Beyond Resume and Skills",
     desc: "Discover how interview practice, communication clarity, and structured answers play a critical role when switching jobs or domains.",
@@ -105,7 +103,7 @@ export default function FeaturedBlogSection() {
         "
         style={{ transitionDelay: "300ms" }}
       >
-        <button
+        {/* <button
           className="
             px-8 py-3 rounded-lg bg-white text-black font-medium hover:-translate-y-1 transition
           "
@@ -114,15 +112,13 @@ export default function FeaturedBlogSection() {
           <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
             →
           </span>
-        </button>
+        </button> */}
       </div>
     </section>
   );
 }
 
-/* =========================
-   BLOG CARD
-========================= */
+
 function BlogCard({ blog }) {
   return (
     <div className="group transition-all duration-300 cursor-pointer">

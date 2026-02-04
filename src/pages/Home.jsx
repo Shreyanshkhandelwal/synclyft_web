@@ -6,7 +6,7 @@ import AiSolutionsSection from "../components/AiSolutionsSection";
 import SubtitleStrip from "../components/SubtitleStrip";
 import UseCasesSection from "../components/UseCasesSection";
 import IntegrationSection from "../components/IntegrationSection";
-import AlgorithmSection from "../components/AlgorithmSection";
+// import AlgorithmSection from "../components/AlgorithmSection";
 import FeaturedBlogSection from "../components/FeaturedBlogSection";
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       <SubtitleStrip />
       <UseCasesSection />
       <IntegrationSection />
-      <AlgorithmSection />
+      {/* <AlgorithmSection /> */}
       <FeaturedBlogSection />
     </>
   );

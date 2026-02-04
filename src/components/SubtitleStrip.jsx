@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const ScrollTextAnimation = () => {
+const ScrollTextSection = () => {
   const sectionRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
@@ -30,15 +30,23 @@ const ScrollTextAnimation = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#3a4d4d] w-full overflow-x-hidden"
+      className="relative bg-[#3a4d4d] w-full overflow-hidden"
     >
-      {/* SCROLL HEIGHT */}
-      <div className="relative h-[120vh] sm:h-[140vh] md:h-[150vh]">
+      {/* 🔥 SCROLL HEIGHT (CONTROLLED, NO EXTRA SPACE) */}
+      <div className="relative h-[140vh] sm:h-[150vh]">
 
-
-        {/* STICKY VIEWPORT */}
-        <div className="sticky top-0 h-[100svh] flex items-center justify-center px-4">
-          <div className="relative w-full max-w-5xl mx-auto">
+        {/* 🔥 STICKY CONTAINER (NO BOTTOM GAP) */}
+        <div
+          className="
+            sticky top-0
+            min-h-[65vh]
+            flex items-start justify-center
+            px-4
+            pt-8
+            pb-2
+          "
+        >
+          <div className="relative w-full max-w-5xl">
 
             {texts.map((text, index) => {
               const step = 1 / texts.length;
@@ -51,14 +59,14 @@ const ScrollTextAnimation = () => {
               let scale = 1;
 
               if (progress < start) {
-                y = 80;
+                y = 60;
                 opacity = 0.35;
               } else if (progress >= start && progress <= end) {
                 const local = (progress - start) / step;
-                y = 80 - local * 80;
+                y = 60 - local * 60;
                 opacity = 1;
               } else {
-                y = -80;
+                y = -60;
                 opacity = 0;
                 blur = 6;
                 scale = 0.96;
@@ -82,8 +90,6 @@ const ScrollTextAnimation = () => {
                       sm:text-[3.2rem]
                       md:text-[4.5rem]
                       lg:text-[6rem]
-                      xl:text-[7rem]
-                      break-words
                     "
                   >
                     {text}
@@ -99,4 +105,4 @@ const ScrollTextAnimation = () => {
   );
 };
 
-export default ScrollTextAnimation;
+export default ScrollTextSection;
