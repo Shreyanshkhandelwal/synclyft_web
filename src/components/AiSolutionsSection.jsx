@@ -54,7 +54,7 @@ export default function AiSolutionsSection() {
 
   return (
     <section ref={containerRef} className="bg-black py-40">
-      {/* ===== HEADING ===== */}
+   
       <div  ref={(el) => (refs.current[0] = el)} className="flex flex-col items-center text-center
           px-4 pt-12
           opacity-0 translate-y-6
@@ -71,7 +71,6 @@ export default function AiSolutionsSection() {
         </p>
       </div>
 
-      {/* ===== SCROLL STACK ===== */}
       <div className="relative h-[300vh]">
         {cards.map((card, i) => {
           const start = i / cards.length;
@@ -110,7 +109,7 @@ export default function AiSolutionsSection() {
                 "
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-                  {/* IMAGE */}
+                  
                   <div className={`relative ${i % 2 !== 0 ? "md:order-2" : ""}`}>
                     <img
                       src={card.img}
@@ -121,7 +120,6 @@ export default function AiSolutionsSection() {
 
                   </div>
 
-                  {/* CONTENT */}
                   <div
                     className={`
                       flex items-center px-14

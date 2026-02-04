@@ -7,7 +7,6 @@ import {
 } from "react-icons/hi";
 import { FiPackage } from "react-icons/fi";
 
-/* animation */
 const reveal = {
   hidden: { opacity: 0, y: 60 },
   visible: {
@@ -16,8 +15,6 @@ const reveal = {
     transition: { duration: 0.8, ease: "easeOut" },
   },
 };
-
-/* reusable card */
 const Card = ({ children, hover = true }) => {
   return (
     <div
@@ -45,7 +42,7 @@ const AiPlatformSection = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      {/* SECTION HEADING */}
+  
       <motion.div
         className="max-w-7xl mx-auto text-center mb-24"
         variants={reveal}
@@ -61,7 +58,7 @@ const AiPlatformSection = () => {
       </motion.div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
-        {/* CARD 1 – AI TECH INTERVIEW */}
+
         <motion.div variants={reveal}>
           <Card>
             <div className="rounded-xl bg-black border border-white/10 p-6 h-[260px] relative overflow-hidden">
@@ -96,7 +93,6 @@ on your responses.`}
           </Card>
         </motion.div>
 
-        {/* CARD 2 – HR & BEHAVIORAL */}
         <motion.div variants={reveal}>
           <Card>
             <div className="rounded-xl bg-black border border-white/10 p-6 h-[260px]">
@@ -135,7 +131,6 @@ on your responses.`}
           </Card>
         </motion.div>
 
-        {/* CARD 3 – VOICE & VIDEO MODE */}
         <motion.div variants={reveal}>
           <Card>
             <div className="rounded-xl bg-black border border-white/10 p-6 h-[300px] relative overflow-hidden text-white/70 text-sm leading-relaxed">
@@ -173,7 +168,6 @@ on your responses.`}
           </Card>
         </motion.div>
 
-        {/* CARD 4 – PERFORMANCE REPORT */}
         <motion.div variants={reveal}>
           <Card>
             <div className="rounded-xl bg-black border border-white/10 p-6 h-[300px] relative overflow-hidden text-white/70 text-sm leading-relaxed">

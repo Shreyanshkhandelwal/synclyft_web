@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-/* ===== SOFT SCROLL REVEAL ===== */
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -21,7 +20,6 @@ const CtaSection = () => {
       viewport={{ once: true }}
       className="relative w-full py-40 overflow-hidden bg-black"
     >
-      {/* ===== Background Grid ===== */}
       <div className="absolute inset-0">
         <div
           className="absolute inset-0"
@@ -35,7 +33,6 @@ const CtaSection = () => {
         <div className="absolute inset-0 bg-black/55" />
       </div>
 
-      {/* ===== Floating Elements ===== */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[18%] left-[12%] w-28 h-28 bg-[#1a4d5e]/60 backdrop-blur-xl rounded-3xl flex items-center justify-center animate-float1">
           <div className="flex flex-col gap-2 w-10">
@@ -73,7 +70,6 @@ const CtaSection = () => {
         </div>
       </div>
 
-      {/* ===== CTA Content ===== */}
       <div className="relative z-10 max-w-6xl mx-auto px-8">
         <motion.div
           variants={fadeUp}
@@ -94,7 +90,7 @@ const CtaSection = () => {
           </p>
 
           <div className="mt-10 flex justify-center gap-6 flex-wrap">
-            {/* ✅ EXPLORE FEATURES → FEATURES PAGE */}
+          
             <Link
               to="/features"
               className="px-8 py-3 rounded-lg bg-white text-black font-medium hover:-translate-y-1 transition"
@@ -105,7 +101,6 @@ const CtaSection = () => {
         </motion.div>
       </div>
 
-      {/* ===== Animations ===== */}
       <style>{`
         @keyframes gridMove {
           to { transform: translate(60px, 60px); }

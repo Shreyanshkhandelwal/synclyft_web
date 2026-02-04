@@ -1,8 +1,5 @@
 // import React, { useEffect, useRef, useState } from "react";
 
-// /* =========================
-//    SYNClyft TESTIMONIALS
-// ========================= */
 // const testimonials = [
 //   {
 //     text: "Synclyft’s AI interviews felt surprisingly real. The follow-up questions and pressure were exactly like my campus placement interviews.",
@@ -67,7 +64,6 @@
 //         ${visible ? "opacity-100" : "opacity-0"}
 //       `}
 //     >
-//       {/* ===== HEADING ===== */}
 //       <div
 //         className={`
 //           text-center mb-20
@@ -84,7 +80,6 @@
 //         </p>
 //       </div>
 
-//       {/* ===== MARQUEE ROW 1 ===== */}
 //       <div className="relative mb-12">
 //         <div
 //           className={`flex gap-8 transition-opacity duration-700 delay-200 ${
@@ -97,7 +92,6 @@
 //         </div>
 //       </div>
 
-//       {/* ===== MARQUEE ROW 2 ===== */}
 //       <div className="relative">
 //         <div
 //           className={`flex gap-8 transition-opacity duration-700 delay-300 ${
@@ -113,9 +107,6 @@
 //   );
 // }
 
-// /* =========================
-//    TESTIMONIAL CARD
-// ========================= */
 // function TestimonialCard({ item, index }) {
 //   const isBig = index % 2 === 0;
 
