@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+  
+}
+body {
+  overflow-x: clip; /* better than hidden for animations */
+}
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.input:focus {
+  border-color: #9fd9e5;
+  box-shadow: 0 0 0 2px rgba(159,217,229,0.25);
+}
+
+
+
+
+
+
+
+
